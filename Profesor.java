@@ -13,11 +13,11 @@ public class Profesor {
         numeroProf++;
     }
     
-    public void setMateria(Materia materia){
+    public void addMateria(Materia materia){
         materiaImparte.add(materia);
     }
     
-    public void setGrupo(Grupo g){
+    public void addGrupo(Grupo g){
         grupo.add(g);
     }
     
