@@ -1,0 +1,28 @@
+public class UserEscuela {
+
+   
+    public static void main(String[] args) {
+        // TODO code application logic here
+        Escuela escom=new Escuela("Escom");
+        Grupo grupo1=new Grupo("1ero A");
+        Materia materia1=new Materia("Matematicas");
+        Profesor profesor1 = new Profesor("Abraham Selano");
+        Alumno alumno1= new Alumno ("Carlos Slim",201578,1);
+        
+        grupo1.asignarProf(profesor1);
+        grupo1.addAlumno(alumno1);
+        
+        profesor1.addGrupo(grupo1);
+        profesor1.addMateria(materia1);
+        
+        alumno1.agregarMateria(materia1);
+        
+        escom.agregarGrupo(grupo1);
+        escom.agregarMateria(materia1);
+        escom.agregarProfesor(profesor1);
+        
+        escom.imprimirDatosGen();
+        
+    }
+    
+}
