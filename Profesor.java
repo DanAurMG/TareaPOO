@@ -1,5 +1,6 @@
 import java.util.ArrayList;
 
+import java.util.ArrayList;
 public class Profesor {
     private String nombre;
     private ArrayList <Materia> materiaImparte;
@@ -35,6 +36,9 @@ public class Profesor {
         for(Materia aux: materiaImparte){
             System.out.println(aux);
         }
+    }
+    public String getNomProfesor(){
+        return nombre;
     }
     
     public static int numProf (){
