@@ -38,7 +38,7 @@ public class Escuela {
         }
         System.out.println("NUmero de profesores: "+Profesor.numProf());
         for(Profesor aux: profesores){
-            System.out.println(aux);//usa Tostring  
+            System.out.println(aux.getNomProfesor());//usa Tostring  
         }
         
         System.out.println("Numero de alumnos: "+Alumno.numAlumnos());
