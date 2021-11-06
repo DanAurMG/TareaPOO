@@ -26,5 +26,17 @@ public class Grupo {
         }
     }
     
+    public String  getNomGrup(){
+        return nombre;
+    }
+    
+    public Profesor  getProf(){
+        return prof;
+    }
+    
+    public static int numGrupos(){
+        return numGrupos;
+    }
+    
 }
 
