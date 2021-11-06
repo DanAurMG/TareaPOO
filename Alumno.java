@@ -1,4 +1,5 @@
-import java.util.ArrayList;
+import java.util.*;
+
 public class Alumno {
     private int numeroBoleta;
     private String nombre;

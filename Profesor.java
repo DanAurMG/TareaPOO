@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+
 public class Profesor {
     private String nombre;
     private ArrayList <Materia> materiaImparte;
