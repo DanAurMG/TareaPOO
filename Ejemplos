@@ -2,7 +2,7 @@ public class UserEscuela {
 
    
     public static void main(String[] args) {
-        // TODO code application logic here
+
         Escuela escom=new Escuela("Escom");
         Grupo grupo1=new Grupo("1ero A");
         Materia materia1=new Materia("Matematicas");
@@ -22,6 +22,36 @@ public class UserEscuela {
         escom.agregarProfesor(profesor1);
         
         escom.imprimirDatosGen();
+        
+        //agregando otro grupo y otro profesor
+        Grupo grupo2=new Grupo("2do B");
+        Materia materia2=new Materia("Informatica");
+        Profesor profesor2 = new Profesor("Erwin Rodriguez");
+        Alumno alumno2= new Alumno ("Sebastian Pineda",2017051,2);
+        
+        grupo2.asignarProf(profesor1);
+        grupo2.asignarProf(profesor2);
+        grupo2.addAlumno(alumno2);
+               
+        profesor1.addGrupo(grupo2);
+        
+        profesor2.addMateria(materia2);
+        
+        alumno2.agregarMateria(materia1);
+        alumno2.agregarMateria(materia2);
+        
+        escom.agregarGrupo(grupo2);
+        escom.agregarMateria(materia2);
+        escom.agregarProfesor(profesor2);
+        System.out.println();
+        escom.imprimirDatosGen();
+        
+        
+        System.out.println("\nMaterias que cursa alumno 1");
+        alumno1.imprimirMaterias();
+        System.out.println("Materias que cursa alumno 2");
+        alumno2.imprimirMaterias();
+        
         
     }
     
