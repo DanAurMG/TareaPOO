@@ -24,7 +24,7 @@ public class Alumno {
     }
     
     public String toString(){
-        return "Numero de boleta: "+numeroBoleta+"\nNOmbre: "+nombre;
+        return "Numero de boleta: "+numeroBoleta+"\nNombre: "+nombre;
     }
     
     public int getGrado(){
